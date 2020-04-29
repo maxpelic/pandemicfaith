@@ -23,6 +23,24 @@ body{
 h1 span{
     white-space: nowrap;
 }
+h1{
+    font-size: 2em;
+    padding:1em;
+    padding-bottom:0.5em;
+    margin-bottom:0;
+}
+.rock_background{
+    background-image: url(images/rocks_background_2.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top:-2em;
+    margin-bottom: 1em;
+    padding-top:3em;
+    color:white;
+}
+.rock_background .full-border{
+    margin-bottom:-6px !important;
+}
 #logo{
     position:fixed;
     top:0;
@@ -32,13 +50,15 @@ h1 span{
     border-bottom: 2px solid #ddd;
     margin:0;
     padding:0.5em;
+    color:#00ab0e;
 }
 #logo a{
     
     font-style: normal;
 }
 section{
-    padding:2em 0;
+    padding:1em 0;
+    background:#fafafa;
 }
 ol li{
     padding-bottom: .5em;
@@ -51,9 +71,6 @@ blockquote{
 }
 em{
     color:#999;
-}
-section:nth-child(odd){
-    background:#fafafa;
 }
 p, section > blockquote, ul, ol{
     width:700px;
@@ -101,11 +118,11 @@ section:nth-of-type(2) img{
 }
 a button{
     display: block;
-    margin:auto;
+    margin:0 auto 1em auto;
     font:inherit;
-    color:#333;
+    color:white;
     padding:1em;
-    background:#dfd;
+    background:#00ab0e;
     border:none;
     outline:none;
     margin-top:2em;
@@ -122,5 +139,10 @@ a button{
     }
     section:nth-of-type(2){
         background-attachment: fixed;
+    }
+}
+@media only screen and (max-width:500px){
+    .hide-mobile{
+        display: none;
     }
 }
