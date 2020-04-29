@@ -38,7 +38,7 @@ h1 span{
     font-style: normal;
 }
 section{
-    padding:5em 0;
+    padding:2em 0;
 }
 ol li{
     padding-bottom: .5em;
@@ -84,12 +84,20 @@ ul li b{
     font-weight: 700;
 }
 section:nth-of-type(2){
+    padding:0;
     background:#333;
+    background-image: url(images/rocks_background.jpg);
+    background-size: cover;
+    background-position: center;
     color:white;
 }
 section:nth-of-type(2) img{
     display: block;
     margin:auto;
+}
+.full-border{
+    width:100%;
+    margin-bottom: -1px !important;
 }
 a button{
     display: block;
@@ -101,4 +109,18 @@ a button{
     border:none;
     outline:none;
     margin-top:2em;
+}
+@media only screen and (min-width:1400px){
+    .col-3{
+        display: flex;
+        width:1200px;
+        justify-content: space-between;
+    }
+    .col-3 li{
+        width:340px;
+        flex-shrink:0;
+    }
+    section:nth-of-type(2){
+        background-attachment: fixed;
+    }
 }
