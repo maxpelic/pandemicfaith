@@ -1,0 +1,72 @@
+article{
+    padding:2em;
+    margin-top:3.5em;
+    background:white;
+    transition: background 0.2s;
+}
+section > p{
+    text-align:center;
+}
+ button{
+     margin:auto;
+     display:block;
+     padding:10px 20px;
+     font:inherit;
+     background:#00ab0e;
+     border:none;
+     outline:none;
+     color:white;
+     transition:background 0.2s, color 0.2s;
+ }
+button:hover{
+    background:white;
+    color:inherit;
+}
+.popup{
+    position:fixed;
+    top:4.5em;
+    left:1em;
+    right:1em;
+    bottom:1em;
+    padding:2em;
+    background:white;
+    transition:opacity 0.2s;
+    box-shadow: 0 0 0 5em #0005;
+    display:none;
+    opacity:0;
+    overflow:auto;
+}
+.popup .x{
+    position: fixed;
+    right:.5em;
+    top:2.25em;
+    font-size: 2em;
+    line-height: 0.5em;
+    padding:0.5em;
+    cursor:pointer;
+}
+
+@media only screen and (min-width:860px){
+    article{
+        display:flex;
+        justify-content: space-around;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    section{
+        width:400px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        border:2px solid #ddd;
+        padding:20px;
+        box-sizing: border-box;
+        margin-bottom:20px;
+        transition:background 0.2s;
+    }
+    section:hover{
+        background:#ddd;
+    }
+    section h2{
+        margin-top:0;
+    }
+}
