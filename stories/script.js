@@ -2,14 +2,15 @@ function clickFunction(element){
     return function(e){
         let popup = element.querySelector('.popup');
         let x = popup.querySelector('.x');
-        popup.style.display = 'block';
-        popup.style.opacity = '1';
-        console.log(x);
+        popup.style.visibility = 'visible';
+        popup.style.opacity = 1;
         x.onclick = function(){
-            popup.style.opacity = '0';
             window.setTimeout(function(){
-                popup.style.display = 'none';
-            }, 200);
+                popup.style.opacity = 0;
+            }, 1);
+            window.setTimeout(function(){
+                popup.style.visibility = 'hidden';
+            }, 500);
         }
     }
 }

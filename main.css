@@ -11,7 +11,10 @@ a{
     font-style: italic;
 }
 body{
-    margin:2em 0;
+    margin-top:2em;
+}
+button{
+    cursor: pointer;
 }
 /* heading */
 #logo, h1, h2{
